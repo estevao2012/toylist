@@ -1,0 +1,223 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* Body */
+
+body { 
+   height: 100%;
+   
+}
+
+/* Image boxes on list page */
+.box {
+   width: 18%;
+   padding-bottom: 20%;
+   background: white;
+   color: #FFF;
+   position: relative;
+   float:left;
+   border-radius: 5px;
+   margin-left: 0.5%;
+}
+
+.innerbox {
+   position: absolute;
+   left: 5px;
+   right: 5px;
+   top: 5px;
+   bottom: 5px;
+   background: white;
+   overflow:hidden;
+}
+
+
+
+
+.innerbox img {
+   width: 100%;
+}
+
+
+.innerbox .titleBox {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -50px;
+   background: #000;
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   padding: 10px;
+   text-align: center;
+   font-family: arial;
+   font-size: 5%;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+}
+
+
+.innerbox:hover .titleBox {
+   margin-bottom: 0;
+}
+
+
+
+ /* Header - Footer  Styles */
+
+p
+{
+  font-family: arial;
+  font-size: 1em;
+}
+
+header, footer
+{
+    font-family: arial;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    background: linear-gradient(#303030 , #404040);
+    
+}
+
+
+footer
+{
+   clear: both;
+   background: linear-gradient(#404040, #303030 );
+}
+
+
+
+/*footer table */
+.footerinner
+{
+    color: grey;
+    font-size: 14px;
+    text-align: left;
+}
+
+tr 
+{
+    column-width: 100px;
+}
+
+
+table {
+    width: 80%;
+}
+
+th {
+    height: 50px;
+}
+
+
+/*-----------*/
+
+.field
+{
+	color: white;
+    font-family: arial;
+    float:center;
+    font-size: 25px;
+    padding: 2% 2% 2% 2%;
+}
+
+
+
+h1
+{
+	background: linear-gradient(#0029A3, #5C7DDE);
+  border: 1px solid white;
+	padding: 1% 1% 1% 1%;
+	color: white;
+	text-align: center;
+  font-size: 1.5em;
+  font-family: arial;
+  width: 80%;
+
+}
+
+h2, li
+{
+    font-size: 1em;
+    font-family: arial;
+}
+
+
+
+
+/*--------- ------------- */
+
+
+.homehero
+{
+    padding: 1% 1% 1% 1%;
+    background-image: url("background.jpg");
+    background-repeat: repeat-y;
+    min-height: 600px;
+    background-position: center;
+    font-family: arial;
+}
+
+
+
+
+
+/*------- a link formatting -------*/
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/*------- Button Format ----------*/
+
+
+.button {
+  background: linear-gradient(#0029A3, #5C7DDE);
+  border-radius: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: linear-gradient(#5C7DDE, #0029A3);
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
