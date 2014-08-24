@@ -14,6 +14,10 @@
 
   <section class="homehero">
 
+  <h1> 
+  Toy Details 
+  </h1>
+
   <div class="field">
     <%= f.text_field :name, :placeholder => "Name" %>
   </div>
@@ -25,14 +29,16 @@
     <%= f.text_area :animal , :placeholder => "Animal" %>
   </div>
 
-<button class="button">
+  <div class="field">
   <%= f.file_field :photo %>
-</button>
+  </div>
+
+
+  <div class="field">
+  <%= f.submit %>
+  </div>
 
 </section>
 
-<button class="button">
-    <%= f.submit %>
-</button>
 
 <% end %>
