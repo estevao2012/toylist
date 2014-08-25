@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require bootstrap
  *= require_self
  */
 
@@ -46,6 +47,7 @@ body {
    bottom: 5px;
    background: white;
    overflow:hidden;
+   padding-top: 20%;
 }
 
 
@@ -57,13 +59,18 @@ body {
   transform: rotate(90deg);  
 }
 
+.landscape img
+{
+  transform: rotate(0deg); 
+}
+
 
 .innerbox .titleBox {
    position: absolute;
    bottom: 0;
    left: 0;
    right: 0;
-   margin-bottom: -50px;
+   margin-bottom: -80px;
    background: #000;
    background: rgba(0, 0, 0, 0.5);
    color: #FFF;
@@ -173,16 +180,6 @@ h2, li
 
 /*--------- ------------- */
 
-.hero
-{
-  border: 2px solid white;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  width: 50%;
-  background: linear-gradient(#0029A3, #5C7DDE);
-  padding: 1% 1% 1% 1%;
-  opacity: 1;
-}
 
 
 .homehero

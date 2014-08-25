@@ -9,7 +9,9 @@
 
 <div class="box">
    <div class="innerbox">
+   	<div class='<%= "landscape" if @toy.notportrait? %>'>
 	<%= image_tag @toy.photo.url%> 
+</div>
 </div>
 </div>
 
@@ -28,6 +30,11 @@
   <%= @toy.animal %>
 </p>
 
+
+<p>
+  <strong>Portrait:</strong>
+  <%= @toy.Portrait %>
+</p>
 
 
 
