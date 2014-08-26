@@ -56,12 +56,13 @@ body {
 .innerbox img {
    width: 100%;
    height: 80%;
-  transform: rotate(90deg);  
+   transform: rotate(90deg);
+  
 }
 
-.landscape img
+.landscape
 {
-  transform: rotate(0deg); 
+  transform: rotate(90deg);
 }
 
 
