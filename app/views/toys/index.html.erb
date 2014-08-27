@@ -3,12 +3,18 @@
 <section class="homehero">
 
 
+<h1>Toys 
+  <%= link_to 'Add New Toy', new_toy_path ,:class => "button" %>
+</h1>
+
+
+
 <form>
-          <legend>Search</legend>
-          <div class='col-xs-4'>
-            <input type='text' class='form-control' value='<%= params[:keyword] %>' name='keyword' placeholder='Keyword' >
-          </div>
+  <legend></legend>
+<input type='text' class='form-control' value='<%= params[:keyword] %>' name='keyword' placeholder='Keyword Search' >
 </form>
+
+<span class="glyphicon glyphicon-search"></span>
 
 <% @toys.each do |toy| %>
 
@@ -22,7 +28,7 @@
        			<%= link_to (image_tag (toy.photo.url)), toy %>
        			</div>
    			<div class="titleBox">
-   				<%= toy.name%>
+   				<%= toy.name %>
    			</div>
    		</div>
 	</div>
@@ -32,10 +38,8 @@
 <%end%>
 
 
-<p class='pull-right'>
-<button class="button"> <%= link_to 'Add New Toy', new_toy_path %></button>
-</p>
-
 </section>
 
+<p>
+</p>
 

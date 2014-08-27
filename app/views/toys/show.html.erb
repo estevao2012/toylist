@@ -2,29 +2,22 @@
 
 <section class="homehero">
 
- <ol class="breadcrumb">
-    <li class="active">
+
       <h1>
-      Toy Details 
-      <h1>
-    </li>
-  </ol>
+      <%= @toy.name %> 
+      </h1>
 
 
 
 
-<div class="box">
-   <div class="innerbox">
+<div class="largebox">
+   <div class="largeinnerbox">
    	<div class='<%= "landscape" if @toy.notportrait? %>'>
-	<%= image_tag @toy.photo.url%> 
-</div>
-</div>
+	     <%= image_tag @toy.photo.url%> 
+    </div>
+  </div>
 </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @toy.name %>
-</p>
 
 <p>
   <strong>Description:</strong>
@@ -44,20 +37,18 @@
 
 
 
-
-
-
-<button class="button"> <%= link_to 'Back', toys_path %></button>
-
-
-
-<button class="button"><%= link_to 'Edit', edit_toy_path(@toy)%> </button>
-
-<button class="button"> <%= link_to 'Delete', @toy, method: :delete, data: { confirm: 'Are you sure?' } %>  </button>
-
-
-
 </section>
+
+
+<%= link_to 'Back', toys_path, :class => "button" %>
+
+<%= link_to 'Edit', edit_toy_path(@toy), :class => "button"%> 
+
+<%= link_to 'Delete', @toy, :class => "button", method: :delete, data: { confirm: 'Are you sure?' } %> 
+
+
+
+
 
 
 

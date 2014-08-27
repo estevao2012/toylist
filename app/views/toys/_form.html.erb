@@ -1,3 +1,5 @@
+<section class="homehero">
+
 <%= form_for(@toy) do |f| %>
   <% if @toy.errors.any? %>
     <div id="error_explanation">
@@ -12,40 +14,36 @@
   <% end %>
 
 
-<section class="homehero">
 
- <ol class="breadcrumb">
-    <li class="active">
+
+
       <h1>
-      Toy Details 
-      <h1>
-    </li>
-  </ol>
+      Enter Toy Details 
+      </h1>
+
 
  
-  <div class="field">
     <%= f.text_field :name, :placeholder => "Name" %>
-  </div>
-  <div class="field">
-    <%= f.text_area :description, :placeholder => "Description"%>
-  </div>
 
-  <div class="field">
+  
+    <%= f.text_area :description, :placeholder => "Description" , :class =>"textarea"%>
+
+
     <%= f.text_area :animal , :placeholder => "Animal" %>
-  </div>
+
 
   <div class="field">
   <%= f.file_field :photo %>
   </div>
 
-  <div class="field">
+  <div class="checkbox">
   <%= f.check_box :Portrait %>
   <%= f.label "is image portrait?" %>
   </div>
 
 
   <div class="field">
-  <%= f.submit %>
+  <%= f.submit "Save", :class => "button"%>
   </div>
 
 
