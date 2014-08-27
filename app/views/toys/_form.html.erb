@@ -14,27 +14,27 @@
 
 <section class="homehero">
 
-  <h1> 
-  Toy Details 
-  </h1>
+ <ol class="breadcrumb">
+    <li class="active">
+      <h1>
+      Toy Details 
+      <h1>
+    </li>
+  </ol>
 
-
+ 
   <div class="field">
-    <%= f.label "Name:" %>
     <%= f.text_field :name, :placeholder => "Name" %>
   </div>
   <div class="field">
-    <%= f.label "Description:" %>
     <%= f.text_area :description, :placeholder => "Description"%>
   </div>
 
   <div class="field">
-    <%= f.label "Animal:" %>
     <%= f.text_area :animal , :placeholder => "Animal" %>
   </div>
 
   <div class="field">
-  <%= f.label "Photo:" %>
   <%= f.file_field :photo %>
   </div>
 
@@ -47,6 +47,8 @@
   <div class="field">
   <%= f.submit %>
   </div>
+
+
 
 </section>
 

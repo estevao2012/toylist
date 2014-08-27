@@ -4,7 +4,7 @@ class ToysController < ApplicationController
   # GET /toys
   # GET /toys.json
   def index
-    @toys = Toy.all
+    @toys = Toy.search(params[:keyword])
   end
 
   # GET /toys/1

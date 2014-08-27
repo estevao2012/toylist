@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140825093833) do
+ActiveRecord::Schema.define(version: 20140826112627) do
 
   create_table "toys", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140825093833) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.boolean  "Portrait"
+    t.text     "keywords"
   end
 
 end
