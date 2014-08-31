@@ -1,50 +1,37 @@
-<p id="notice"><%= notice %></p>
-
-<section class="homehero">
-
-
-      <h1>
-      <%= @toy.name %> 
-      </h1>
 
 
 
+<div class="showcontent">
 
-<div class="largebox">
-   <div class="largeinnerbox">
-   	<div class='<%= "landscape" if @toy.notportrait? %>'>
+ <p><%= notice %></p>
+
+
+      <div class="img-responsive">
+   	  <div class='<%= "landscape" if @toy.notportrait? %>'>
 	     <%= image_tag @toy.photo.url%> 
-    </div>
+      </div>
+      </div>
+
+    <br>
+    <h1><%= @toy.name %> </h1>
+    <p><strong>Description: </strong><%= @toy.description %></p>
+    <p><strong>Animal: </strong><%= @toy.animal %></p>
+    <p><strong>Portrait: </strong><%= @toy.Portrait %></p>
+
+
+
+    <br>
+    <%= link_to 'Back', toys_path, :class => "button" %>
+    <%= link_to 'Edit', edit_toy_path(@toy), :class => "button"%> 
+    <%= link_to 'Delete', @toy, :class => "button", method: :delete, data: { confirm: 'Are you sure?' } %> 
+    <br>
+
   </div>
-</div>
-
-
-<p>
-  <strong>Description:</strong>
-  <%= @toy.description %>
-</p>
-
-<p>
-  <strong>Animal:</strong>
-  <%= @toy.animal %>
-</p>
-
-
-<p>
-  <strong>Portrait:</strong>
-  <%= @toy.Portrait %>
-</p>
 
 
 
-</section>
 
 
-<%= link_to 'Back', toys_path, :class => "button" %>
-
-<%= link_to 'Edit', edit_toy_path(@toy), :class => "button"%> 
-
-<%= link_to 'Delete', @toy, :class => "button", method: :delete, data: { confirm: 'Are you sure?' } %> 
 
 
 

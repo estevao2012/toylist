@@ -1,9 +1,9 @@
-<section class="homehero">
+<section class="showcontent">
 
 <%= form_for(@toy) do |f| %>
   <% if @toy.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@toy.errors.count, "error") %> prohibited this toy from being saved:</h2>
+    <div class="alert alert-danger">
+      <h3><%= pluralize(@toy.errors.count, "error") %> prohibited this toy from being saved:</h3>
 
       <ul>
       <% @toy.errors.full_messages.each do |message| %>
@@ -17,19 +17,20 @@
 
 
 
-      <h1>
-      Enter Toy Details 
-      </h1>
+  <h1>
+  Enter Toy Details 
+  </h1>
 
 
- 
-    <%= f.text_field :name, :placeholder => "Name" %>
-
+<div class="field">
+  <%= f.text_field :name, :placeholder => "Name" %>
+</div>
   
-    <%= f.text_area :description, :placeholder => "Description" , :class =>"textarea"%>
+  <%= f.text_area :description, :placeholder => "Description" , :class =>"textarea"%>
 
-
-    <%= f.text_area :animal , :placeholder => "Animal" %>
+<div class="field">
+  <%= f.text_area :animal , :placeholder => "Animal" %>
+</div>
 
 
   <div class="field">

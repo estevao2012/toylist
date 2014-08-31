@@ -1,0 +1,70 @@
+$footertext: grey;
+$hf-grad-light: #303030 ;
+$hf-grad-dark: #404040 ;
+
+
+
+
+header, footer
+{
+    font-family: arial;
+    color: white;
+    padding: 2% 2% 2% 2%;
+    background: linear-gradient($hf-grad-light , $hf-grad-dark);
+    margin-bottom: 1%;
+    
+}
+
+
+footer
+{
+   clear: both;
+   background: linear-gradient($hf-grad-dark, $hf-grad-light );
+   bottom: 0;
+   position: relative;
+   width: 100%;
+}
+
+
+
+/*footer table */
+.footerinner
+{
+    color: $footertext;
+    font-size: 14px;
+    text-align: left;
+          tr 
+          {
+              column-width: 100px;
+          }
+
+          table {
+              width: 80%;
+          }
+
+          th {
+              height: 50px;
+          }
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+
+
+
+

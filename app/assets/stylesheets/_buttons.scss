@@ -1,0 +1,22 @@
+
+$button-grad-light: #0029A3;
+$button-grad-dark: #5C7DDE;
+
+
+
+
+.button {
+  background: linear-gradient($button-grad-light, $button-grad-dark);
+  border-radius: 10px;
+  font-family: Arial;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: linear-gradient($button-grad-dark, $button-grad-light);
+  text-decoration: none;
+  color: white;
+}

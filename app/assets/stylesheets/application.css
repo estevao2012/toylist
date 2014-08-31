@@ -15,210 +15,11 @@
  *= require_self
  */
 
-/* Body */
-
-body { 
-   height: 100%;
-   width: 100%;
-   background-image: url("woodenbg.jpg");
-   
-}
-
-/* Image boxes on list page */
-.box {
-   width: 16%;
-   padding-bottom: 20%;
-   /*background: white;*/
-   background: linear-gradient(#F8F8F8, white);
-   color: #FFF;
-   position: relative;
-   float:left;
-   border-radius: 10px;
-   margin-left: 1%;
-   margin-right: 1%;
-   margin-bottom: 1%;
-}
-
-.innerbox {
-   position: absolute;
-   left: 5px;
-   right: 5px;
-   top: 5px;
-   bottom: 5px;
-   /*background: white;*/
-   background: linear-gradient(#F8F8F8, white);
-   overflow:hidden;
-   padding-top: 18%;
-}
-
-
-
-
-.innerbox img {
-   width: 100%;
-   height: 100%;
-   transform: rotate(90deg);
-  
-}
-
-.landscape
+body
 {
-  transform: rotate(90deg);
+    background-image: url(woodenbg.jpg);
+    width: 100%;
 }
-
-
-.innerbox .titleBox {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin-bottom: -80px;
-   background: #000;
-   background: rgba(0, 0, 0, 0.5);
-   color: #FFF;
-   padding: 10px;
-   text-align: center;
-   font-family: arial;
-   font-size: 16px;
-   -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
-}
-
-
-.innerbox:hover .titleBox {
-   margin-bottom: 0;
-}
-
-
-
-
-/* Large Image boxes for show page */
-.largebox {
-   width: 40%;
-   padding-bottom: 3%;
-   /*background: white;*/
-   background: linear-gradient(#F8F8F8, white);
-   color: #FFF;
-   position: relative;
-   float:left;
-   border-radius: 10px;
-   margin-left: 1%;
-   margin-right: 1%;
-   margin-bottom: 1%;
-}
-
-.largeinnerbox {
-   /*position: absolute;*/
-   left: 5px;
-   right: 5px;
-   top: 5px;
-   bottom: 5px;
-   /*background: white;*/
-   background: linear-gradient(#F8F8F8, white);
-   overflow:hidden;
-   padding-top: 18%;
-}
-
-.largeinnerbox img {
-   width: 100%;
-   height: 100%;
-   transform: rotate(90deg);
-  
-}
- /* Header - Footer  Styles */
-
-p
-{
-  font-family: arial;
-  font-size: 1em;
-}
-
-header, footer
-{
-    font-family: arial;
-    color: white;
-    padding: 2% 2% 2% 2%;
-    background: linear-gradient(#303030 , #404040);
-    
-}
-
-
-footer
-{
-   clear: both;
-   background: linear-gradient(#404040, #303030 );
-   background-position: 0;
-}
-
-
-
-/*footer table */
-.footerinner
-{
-    color: grey;
-    font-size: 14px;
-    text-align: left;
-}
-
-tr 
-{
-    column-width: 100px;
-}
-
-
-table {
-    width: 80%;
-}
-
-th {
-    height: 50px;
-}
-
-
-/*-----------*/
-
-.textarea
-{
-
-  min-width: 80%;
-  height: 150px;
-}
-
-
-
-h1
-{
-  font-size: 1.5em;
-}
-
-h2, li
-{
-    font-size: 1em;
-    font-family: arial;
-}
-
-
-
-
-/*--------- ------------- */
-
-
-
-.homehero
-{
-    padding: 1% 1% 1% 1%;
-    /*background-image: url("woodenbg.jpg");
-    background-repeat: repeat-y;
-    min-height: 600px; */
-    background-position: center;
-    background-size: auto;
-    font-family: arial;
-    text-align: left;
-}
-
-
 
 
 
@@ -235,33 +36,35 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: white;
-}
-
-a:active {
-    text-decoration: underline;
+    color: grey;
 }
 
 
-/*------- Button Format ----------*/
-
-
-.button {
-  background: linear-gradient(#0029A3, #5C7DDE);
-  border-radius: 10px;
-  font-family: Arial;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.button:hover {
-  background: linear-gradient(#5C7DDE, #0029A3);
-  text-decoration: none;
-  color: white;
+/*------- Sections -----*/
+.hero
+{
+    padding: 1% 1% 1% 1%;
+    margin:;
+    font-family: arial;
+    text-align: left;
 }
 
 
+.showcontent
+{
+    padding: 1% 1% 1% 1%;
+    background: rgba(119, 136, 153, .4);;
+    float:right;
+    border-radius: 15px;
+    margin: 1% 1% 1% 1%;
+    width: 95%;
+    overflow: hidden;
+}
 
 
+/*------- Form ---------*/
+.textarea
+{
+  min-width: 80%;
+  height: 150px;
+}
