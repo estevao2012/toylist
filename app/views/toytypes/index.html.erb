@@ -1,0 +1,36 @@
+
+<body>
+
+<div class="showcontent">
+
+<h1>Toy types
+<%= link_to 'New Toytype', new_toytype_path, :class => "button" %>
+
+</h1>
+
+<table class="table table-hover table-bordered">
+  <thead>
+    <tr>
+      <th id="thindex">Toy type</th>
+      <th id="thindex">Description</th>
+      <th id="thindex">Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toytypes.each do |toytype| %>
+      <tr>
+        <td><%= link_to toytype.toytype, edit_toytype_path(toytype) %></td>
+        <td><%= toytype.description %></td>
+       <td> <%= link_to 'Delete', @toytype, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
+</div>
+</body>

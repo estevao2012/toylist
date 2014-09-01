@@ -1,19 +1,16 @@
 <body>
 
-<section class="hero">
-
+<div class="showcontent">
 
 <h1>Toys 
   <%= link_to 'Add New Toy', new_toy_path ,:class => "button" %>
 </h1>
 
 
-<div class="showcontent">
 
-
-
-
+<form>
 <input type='text' class='form-control' value='<%= params[:keyword] %>' name='keyword' placeholder='Keyword Search' >
+</form>
 
   <legend></legend>
 
@@ -35,9 +32,6 @@
 
 
 <%end%>
-
-
-</section>
 
 </body>
 

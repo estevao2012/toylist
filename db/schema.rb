@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140826112627) do
+ActiveRecord::Schema.define(version: 20140901084032) do
 
   create_table "toys", force: true do |t|
     t.string   "name"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 20140826112627) do
     t.datetime "photo_updated_at"
     t.boolean  "Portrait"
     t.text     "keywords"
+  end
+
+  create_table "toytypes", force: true do |t|
+    t.string   "toytype"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

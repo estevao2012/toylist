@@ -36,18 +36,11 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: grey;
+    color: white;
 }
 
 
 /*------- Sections -----*/
-.hero
-{
-    padding: 1% 1% 1% 1%;
-    margin:;
-    font-family: arial;
-    text-align: left;
-}
 
 
 .showcontent
@@ -66,5 +59,14 @@ a:hover {
 .textarea
 {
   min-width: 80%;
-  height: 150px;
+  height: 150
 }
+
+
+#thindex
+{
+       background: linear-gradient(#303030 , #404040);
+    color: white;
+}
+
+

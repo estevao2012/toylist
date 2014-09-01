@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="showcontent">
+
+<p>
+  <strong>Toytype:</strong>
+  <%= @toytype.toytype %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @toytype.description %>
+</p>
+
+<%= link_to 'Edit', edit_toytype_path(@toytype), :class => "button" %>
+<%= link_to 'Back', toytypes_path , :class => "button"%>
+<%= link_to 'Delete', @toytype, :class => "button", method: :delete, data: { confirm: 'Are you sure?' } %> 
+
+<br>
+</div>
