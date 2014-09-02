@@ -28,7 +28,7 @@ class ToytypesController < ApplicationController
 
     respond_to do |format|
       if @toytype.save
-        format.html { redirect_to edit_toytype_path(@toytype), notice: 'Toytype was successfully created.' }
+        format.html { redirect_to toytypes_url, notice: 'Toytype was successfully created.' }
         format.json { render :show, status: :created, location: @toytype }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ToytypesController < ApplicationController
   def update
     respond_to do |format|
       if @toytype.update(toytype_params)
-        format.html { redirect_to @toytype, notice: 'Toytype was successfully updated.' }
+        format.html { redirect_to toytypes_url, notice: 'Toytype was successfully updated.' }
         format.json { render :show, status: :ok, location: @toytype }
       else
         format.html { render :edit }

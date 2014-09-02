@@ -44,6 +44,11 @@
 
 
   <div class="field">
+    <%= f.select, option_from_collection_for_select (Toytype.all, :id, :name) %>
+  </div>
+
+
+  <div class="field">
   <%= f.submit "Save", :class => "button"%>
   </div>
 

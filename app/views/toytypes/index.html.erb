@@ -22,7 +22,7 @@
       <tr>
         <td><%= link_to toytype.toytype, edit_toytype_path(toytype) %></td>
         <td><%= toytype.description %></td>
-       <td> <%= link_to 'Delete', @toytype, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+       <td> <%= link_to 'Delete', toytype, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
       </tr>
     <% end %>
   </tbody>

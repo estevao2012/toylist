@@ -1,5 +1,7 @@
 class Toy < ActiveRecord::Base
 
+	belongs_to :toytype
+
 require 'paperclip'
 
 validates :name, presence: true
