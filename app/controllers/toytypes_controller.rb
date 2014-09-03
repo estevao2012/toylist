@@ -28,7 +28,7 @@ class ToytypesController < ApplicationController
 
     respond_to do |format|
       if @toytype.save
-        format.html { redirect_to toytypes_url, notice: 'Toytype was successfully created.' }
+        format.html { redirect_to toytypes_url, notice: 'Toy type successfully added.' }
         format.json { render :show, status: :created, location: @toytype }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ToytypesController < ApplicationController
   def update
     respond_to do |format|
       if @toytype.update(toytype_params)
-        format.html { redirect_to toytypes_url, notice: 'Toytype was successfully updated.' }
+        format.html { redirect_to toytypes_url, notice: 'Toy type successfully updated.' }
         format.json { render :show, status: :ok, location: @toytype }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ToytypesController < ApplicationController
   def destroy
     @toytype.destroy
     respond_to do |format|
-      format.html { redirect_to toytypes_url, notice: 'Toytype was successfully destroyed.' }
+      format.html { redirect_to toytypes_url, notice: 'Toy type was successfully delete.' }
       format.json { head :no_content }
     end
   end

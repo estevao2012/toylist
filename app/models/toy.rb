@@ -14,6 +14,9 @@ validates_attachment_content_type :photo, :content_type => 'image/jpeg'
 
 
 scope :search, ->(keyword){ where('keywords LIKE ?', "%#{keyword.downcase}%") if keyword.present? }
+scope :filter, ->(name){
+    joins(:toytypes).where('toytypes.name = ?', name) if name.present?
+  }
 
 
 before_save :set_keywords

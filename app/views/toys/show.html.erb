@@ -1,12 +1,18 @@
 
-<div class="showcontent">
+<% if notice %>
+<div class="alert alert-success" role="alert"><%= notice %></div>
+<%end%>
 
+
+  <div class="showcontent">
 
       <div class="img-responsive">
    	  <div class='<%= "landscape" if @toy.notportrait? %>'>
 	     <%= image_tag @toy.photo.url%> 
       </div>
       </div>
+
+
 
     <br>
     <h1><%= @toy.name %> </h1>
@@ -22,7 +28,7 @@
     <%= link_to 'Delete', @toy, :class => "button", method: :delete, data: { confirm: 'Are you sure?' } %> 
     <br>
 
-  </div>
+</div>
 
 
 

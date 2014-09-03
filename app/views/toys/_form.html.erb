@@ -17,9 +17,7 @@
 
 
 
-  <h1>
-  Enter Toy Details 
-  </h1>
+  <h1>Enter Toy Details </h1>
 
 
 <div class="field">
@@ -44,17 +42,12 @@
 
 
   <div class="field">
-    <%= f.select, option_from_collection_for_select (Toytype.all, :id, :name) %>
-  </div>
-
-
-  <div class="field">
   <%= f.submit "Save", :class => "button"%>
   </div>
 
 
+<% end %>
 
 </section>
 
 
-<% end %>

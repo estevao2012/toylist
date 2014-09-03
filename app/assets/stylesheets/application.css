@@ -45,11 +45,10 @@ a:hover {
 
 .showcontent
 {
-    padding: 1% 1% 1% 1%;
-    background: rgba(119, 136, 153, .4);;
-    float:right;
+    background: rgba(119, 136, 153, .4);
     border-radius: 15px;
-    margin: 1% 1% 1% 1%;
+    margin: 2% 2% 2% 2%;
+    padding: 2% 2% 2% 2%;
     width: 95%;
     overflow: hidden;
 }
