@@ -11,7 +11,8 @@ header, footer
     color: white;
     padding: 2% 2% 2% 2%;
     background: linear-gradient($hf-grad-light , $hf-grad-dark);
-    margin-bottom: 1%;   
+    margin-bottom: 1%;  
+    width: auto ;
 }
 
 
@@ -21,7 +22,6 @@ footer
    background: linear-gradient($hf-grad-dark, $hf-grad-light );
    bottom: 0;
    position: relative;
-   width: 100%;
 }
 
 
@@ -47,18 +47,15 @@ footer
 }
 
 
+header a:hover, 
 footer a:hover
 {
     text-decoration: none;
-    color: grey;
+    color: gray;
 }
 
 
-header a:hover
-{
-    text-decoration: none;
-    color: grey;
-}
+
 
 
 

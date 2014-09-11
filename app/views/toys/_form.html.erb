@@ -40,6 +40,9 @@
   <%= f.label "is image portrait?" %>
   </div>
 
+  <div class="field">
+  <%= f.collection_select(:toytype_id, Toytype.all, :id , :toytype, prompt: true)  %>
+  </div>
 
   <div class="field">
   <%= f.submit "Save", :class => "button"%>

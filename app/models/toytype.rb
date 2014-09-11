@@ -1,6 +1,6 @@
 class Toytype < ActiveRecord::Base
 
-	has_many :toys
+	belongs_to :toy
 
 validates :toytype, presence: true
 validates :description, presence: true

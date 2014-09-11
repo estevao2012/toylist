@@ -1,6 +1,4 @@
-<body>
-
-  <% if notice %>
+<% if notice %>
 <div class="alert alert-success" role="alert"><%= notice %></div>
 <%end%>
 
@@ -11,12 +9,12 @@
 </h1>
 
 
-
 <form>
 <input type='text' class='form-control' value='<%= params[:keyword] %>' name='keyword' placeholder='Keyword Search' >
+<button type="submit" class="button">Search</button>
 </form>
 
-  <legend></legend>
+<legend></legend>
 
 <span class="glyphicon glyphicon-search"></span>
 
@@ -37,5 +35,4 @@
 
 <%end%>
 
-</body>
 

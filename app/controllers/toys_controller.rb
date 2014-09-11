@@ -10,6 +10,7 @@ class ToysController < ApplicationController
   # GET /toys/1
   # GET /toys/1.json
   def show
+    @toytype = Toytype.find(@toy.toytype_id);
   end
 
   # GET /toys/new
@@ -69,6 +70,6 @@ class ToysController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def toy_params
-      params.require(:toy).permit(:name, :description, :animal, :photo, :Portrait)
+      params.require(:toy).permit(:name, :description, :animal, :photo, :Portrait, :toytype_id)
     end
 end
