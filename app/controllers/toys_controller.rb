@@ -10,7 +10,7 @@ class ToysController < ApplicationController
   # GET /toys/1
   # GET /toys/1.json
   def show
-    @toytype = Toytype.find(@toy.toytype_id);
+    
   end
 
   # GET /toys/new

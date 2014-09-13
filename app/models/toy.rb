@@ -1,6 +1,6 @@
 class Toy < ActiveRecord::Base
 
-	has_one :toytype
+	belongs_to :toytype
 
 require 'paperclip'
 
@@ -23,6 +23,10 @@ before_save :set_keywords
   end
 
 end
+
+#def toytypename
+ #  select toytype from toytypes join toys on toytypes.id = toys.toytype_id where toys.id
+#end
 
 
 private

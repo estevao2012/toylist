@@ -18,7 +18,9 @@
     <p><strong>Description: </strong><%= @toy.description %></p>
     <p><strong>Animal: </strong><%= @toy.animal %></p>
     <p><strong>Portrait: </strong><%= @toy.Portrait %></p>
-    <p><strong>Toy type: </strong> <%= @toy.toytype_id %></p>
+    <p><strong>Toy type: </strong> 
+      <%= @toy.toytype.toytype %>
+    </p>
 
 
 
