@@ -13,6 +13,7 @@ header, footer
     background: linear-gradient($hf-grad-light , $hf-grad-dark);
     margin-bottom: 1%;  
     width: auto ;
+    clear: both;
 }
 
 
@@ -29,10 +30,11 @@ footer
 /*footer table */
 .footerinner
 {
+    clear: both;
     color: $footertext;
     font-size: 14px;
     text-align: left;
-    clear: both;
+
           tr {
               column-width: 100px;
           }

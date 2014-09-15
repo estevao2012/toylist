@@ -1,5 +1,5 @@
 
-.landscape 
+.landscape
 {
   transform: rotate(90deg);
 }
@@ -9,12 +9,14 @@
 .img-responsive img
 {
   transform: rotate(90deg);
-  height: auto;
-  width: 30%;
-  float: left;
+  height: 65%;
+  width: 40%;
   margin: 5% 5% 5% 5%;
-  padding: 2% 2% 2% 2%;
-  
+  vertical-align: center;
+  border: solid white 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  float: center;
 }
 
 

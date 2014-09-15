@@ -24,10 +24,6 @@ before_save :set_keywords
 
 end
 
-#def toytypename
- #  select toytype from toytypes join toys on toytypes.id = toys.toytype_id where toys.id
-#end
-
 
 private
 
