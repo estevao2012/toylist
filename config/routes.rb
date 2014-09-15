@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :users
+
   resources :toytypes
 
   get 'static_pages/home'
